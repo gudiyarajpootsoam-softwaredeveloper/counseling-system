@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pathway Counseling guides students step by step through the college counseling and admission process.">
+  <title>Pathway Counseling | Admission Guidance for Students</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true">🎓</span>Pathway Counseling</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="steps.html">Counseling Steps</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Your admission journey, made simple.</h1>
+          <p>Step-by-step guidance through registration, choice filling, seat allotment and reporting, so you never miss a deadline or a document.</p>
+          <div class="hero-actions">
+            <a href="steps.html" class="btn btn-primary">Start the process →</a>
+            <a href="contact.html" class="btn btn-outline">Talk to a counselor</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-labelledby="deadline-title">
+          <h2 id="deadline-title">⏰ <span id="deadline-name">Next deadline</span></h2>
+          <p id="deadline-date" style="margin:0;font-size:.95rem"></p>
+          <div class="countdown" id="countdown" aria-live="polite">
+            <div><strong data-unit="days">0</strong><small>Days</small></div>
+            <div><strong data-unit="hours">0</strong><small>Hours</small></div>
+            <div><strong data-unit="minutes">0</strong><small>Mins</small></div>
+            <div><strong data-unit="seconds">0</strong><small>Secs</small></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>How we help</h2>
+          <p>Everything you need to get through counseling with confidence, all in one place.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">🧭</div>
+            <h3>Clear step-by-step roadmap</h3>
+            <p>Follow each counseling stage in order, with checklists, and track your progress as you go.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">📄</div>
+            <h3>Document checklist</h3>
+            <p>Know exactly which certificates, photos and IDs to keep ready for upload and verification.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🏫</div>
+            <h3>Smart choice filling</h3>
+            <p>Learn how to order your college and course preferences to get the best possible seat.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">💬</div>
+            <h3>One-on-one support</h3>
+            <p>Have a doubt? Send your query to our counselors and get a response within 24 hours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--surface)">
+      <div class="container stats">
+        <div><strong class="counter" data-target="12000">0</strong><span>Students guided</span></div>
+        <div><strong class="counter" data-target="350">0</strong><span>Partner colleges</span></div>
+        <div><strong class="counter" data-target="8">0</strong><span>Simple steps</span></div>
+        <div><strong class="counter" data-target="24">0</strong><span>Hour query response</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Important dates</h2>
+          <p>Indicative schedule for the current counseling session. Always confirm on the official portal.</p>
+        </div>
+        <div class="grid" id="dates-grid"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Not sure where to begin?</h2>
+            <p style="margin:0;color:var(--muted)">Browse the most common questions students ask.</p>
+          </div>
+          <a href="faqs.html" class="btn btn-dark">Read the FAQs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🎓 Pathway Counseling</h3>
+        <p>Helping students through the counseling and admission process with clear, reliable guidance.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="steps.html">Counseling Steps</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reach us</h3>
+        <ul>
+          <li>📧 help@pathway-counseling.example</li>
+          <li>🕘 Mon–Sat, 9:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright container">© <span class="year"></span> Pathway Counseling. Academic project by Garima.</p>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

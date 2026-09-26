@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send your counseling query to Pathway Counseling and get a response within 24 hours.">
+  <title>Contact | Pathway Counseling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true">🎓</span>Pathway Counseling</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="steps.html">Counseling Steps</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact a counselor</h1>
+        <p>Send us your question and a counselor will reply within 24 hours.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+        <aside class="card">
+          <h2>Get in touch</h2>
+          <ul class="info-list">
+            <li><span aria-hidden="true">📧</span><div><strong>Email</strong><br>help@pathway-counseling.example</div></li>
+            <li><span aria-hidden="true">📞</span><div><strong>Helpline</strong><br>+91 00000 00000 (demo number)</div></li>
+            <li><span aria-hidden="true">🕘</span><div><strong>Office hours</strong><br>Mon–Sat, 9:00 AM – 6:00 PM</div></li>
+            <li><span aria-hidden="true">📍</span><div><strong>Address</strong><br>Student Help Centre, Meerut, Uttar Pradesh</div></li>
+          </ul>
+        </aside>
+
+        <div class="card">
+          <h2>Send your query</h2>
+          <div id="form-alert" role="status" aria-live="polite"></div>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name <span class="req">*</span></label>
+                <input id="name" name="name" autocomplete="name">
+                <div class="error-msg" id="name-error"></div>
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="req">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email">
+                <div class="error-msg" id="email-error"></div>
+              </div>
+              <div class="field">
+                <label for="phone">Mobile number <span class="req">*</span></label>
+                <input id="phone" name="phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile">
+                <div class="error-msg" id="phone-error"></div>
+              </div>
+              <div class="field">
+                <label for="course">Course of interest <span class="req">*</span></label>
+                <select id="course" name="course">
+                  <option value="">— Select —</option>
+                  <option>B.Tech / B.E.</option>
+                  <option>BCA / B.Sc.</option>
+                  <option>MCA</option>
+                  <option>MBA</option>
+                  <option>Other</option>
+                </select>
+                <div class="error-msg" id="course-error"></div>
+              </div>
+              <div class="field full">
+                <label for="topic">Topic <span class="req">*</span></label>
+                <select id="topic" name="topic">
+                  <option value="">— Select —</option>
+                  <option>Registration</option>
+                  <option>Documents</option>
+                  <option>Choice filling</option>
+                  <option>Seat allotment</option>
+                  <option>Fees &amp; refunds</option>
+                  <option>Other</option>
+                </select>
+                <div class="error-msg" id="topic-error"></div>
+              </div>
+              <div class="field full">
+                <label for="message">Your question <span class="req">*</span></label>
+                <textarea id="message" name="message" maxlength="500"></textarea>
+                <div class="hint"><span id="char-count">0</span>/500</div>
+                <div class="error-msg" id="message-error"></div>
+              </div>
+              <div class="full">
+                <button type="submit" class="btn btn-dark">Send query</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🎓 Pathway Counseling</h3>
+        <p>Helping students through the counseling and admission process with clear, reliable guidance.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="steps.html">Counseling Steps</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reach us</h3>
+        <ul>
+          <li>📧 help@pathway-counseling.example</li>
+          <li>🕘 Mon–Sat, 9:00 AM – 6:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright container">© <span class="year"></span> Pathway Counseling. Academic project by Garima.</p>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top">↑</button>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
